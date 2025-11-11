@@ -181,10 +181,18 @@ body {
 }
 
 .pirat {
+<<<<<<< HEAD
   position: absolute;
   bottom: 160px;
   left: 348px;
   transform: none;
+=======
+  position: absolute;    
+  bottom: 160px;          
+  left: 348px;            
+  transform: none;
+  cursor: pointer; 
+>>>>>>> abbd65d67486e81a741d3662d74cf6199628a708
 }
 
 .pirat img {
