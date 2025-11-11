@@ -184,7 +184,8 @@ body {
   position: absolute;    
   bottom: 160px;          
   left: 348px;            
-  transform: none;       
+  transform: none;
+  cursor: pointer; 
 }
 
 .pirat img {

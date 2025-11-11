@@ -36,3 +36,13 @@ document.addEventListener("DOMContentLoaded", () => {
   const playBtn = document.getElementById("play-button");
   playBtn.addEventListener("click", playBtnClick);
 });
+
+function piratClick(event) {
+  const piratSound = new Audio("sound/wooden-ship-break.mp3");
+  piratSound.play();
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+  const piratskib = document.getElementById("piratskib");
+  piratskib.addEventListener("click", piratClick);
+});
