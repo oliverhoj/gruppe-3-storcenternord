@@ -14,7 +14,6 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
-
 // lav den nu med skattekisten, når man hover over den så skal der afspilles en lyd af skattekisten der åbnes, med skattekiste-sounden
 function handleSkattekisteHover(event) {
   const skattekisteSound = new Audio("sound/skattekiste-sound.mp3");
