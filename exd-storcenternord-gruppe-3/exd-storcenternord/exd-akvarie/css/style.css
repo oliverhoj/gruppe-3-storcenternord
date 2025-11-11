@@ -153,10 +153,10 @@ body {
   --drift: -20px;
 }
 .bubble:nth-child(9) {
-  animation-delay: 0s;
-  animation-duration: 18s;
-  left: -87%;
-  --drift: 70px;
+  animation-delay: 0s; /* gør boblen synlig med det samme */
+  animation-duration: 18s; /* gør boblen langsommere */
+  left: 87%; /* gør boblen mere til højre */
+  --drift: 70px; /* gør boblen mere til højre mens den svømmer*/
 }
 .bubble:nth-child(10) {
   animation-delay: 0s;
@@ -167,12 +167,12 @@ body {
 
 .image-skattekiste {
   position: absolute;
-  width: 20px;           /* gør kisten mindre */
-  max-width: 20vw;        /* skalerer pænt på små/større skærme */
-  bottom: 16px;           /* placeret nede */
-  left: 40px;             /* placeret i venstre hjørne */
-  transform: none;        /* fjern tidligere translate */
-  z-index: 3;             /* sørg for den ligger over baggrunden */
+  width: 20px; /* gør kisten mindre */
+  max-width: 20vw; /* skalerer pænt på små/større skærme */
+  bottom: 16px; /* placeret nede */
+  left: 40px; /* placeret i venstre hjørne */
+  transform: none; /* fjern tidligere translate */
+  z-index: 3; /* sørg for den ligger over baggrunden */
 }
 
 .image-skattekiste img {
@@ -181,10 +181,10 @@ body {
 }
 
 .pirat {
-  position: absolute;    
-  bottom: 160px;          
-  left: 348px;            
-  transform: none;       
+  position: absolute;
+  bottom: 160px;
+  left: 348px;
+  transform: none;
 }
 
 .pirat img {
