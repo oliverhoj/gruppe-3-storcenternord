@@ -14,7 +14,6 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
-
 // lav den nu med skattekisten, når man hover over den så skal der afspilles en lyd af skattekisten der åbnes, med skattekiste-sounden
 function handleSkattekisteHover(event) {
   const skattekisteSound = new Audio("sound/skattekiste-sound.mp3");
@@ -26,4 +25,14 @@ document.addEventListener("DOMContentLoaded", () => {
   // Add hover handler to skattekiste
   const skattekiste = document.getElementById("skattekiste");
   skattekiste.addEventListener("mouseover", handleSkattekisteHover);
+});
+
+function playBtnClick(event) {
+  const playBtnSound = new Audio("sound/eating-chips.mp3");
+  playBtnSound.play();
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+  const playBtn = document.getElementById("play-button");
+  playBtn.addEventListener("click", playBtnClick);
 });
