@@ -36,3 +36,8 @@ document.addEventListener("DOMContentLoaded", () => {
   const playBtn = document.getElementById("play-button");
   playBtn.addEventListener("click", playBtnClick);
 });
+
+// Tilføj event listener til knappen for at navigere tilbage start siden
+document.getElementById("play-button").addEventListener("click", function () {
+  window.location.href = "../exd-spil/index.html";
+});
