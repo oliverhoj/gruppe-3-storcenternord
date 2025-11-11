@@ -2,7 +2,7 @@
 
 // funktion der afspiller lyd når boble klikkes og tilføjer pop animation
 function handleBubbleClick(event) {
-  const bubbleSound = new Audio("../sound/bubble-pop.mp3"); //ændrer lydfil til boblelyd
+  const bubbleSound = new Audio("sound/bubble-pop.mp3"); //ændrer lydfil til boblelyd
   bubbleSound.play();
 }
 
@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 // lav den nu med skattekisten, når man hover over den så skal der afspilles en lyd af skattekisten der åbnes, med skattekiste-sounden
 function handleSkattekisteHover(event) {
-  const skattekisteSound = new Audio("../sound/skattekiste-sound.mp3");
+  const skattekisteSound = new Audio("sound/skattekiste-sound.mp3");
   skattekisteSound.play();
 }
 
@@ -26,4 +26,14 @@ document.addEventListener("DOMContentLoaded", () => {
   // Add hover handler to skattekiste
   const skattekiste = document.getElementById("skattekiste");
   skattekiste.addEventListener("mouseover", handleSkattekisteHover);
+});
+
+function playBtnClick(event) {
+  const playBtnSound = new Audio("sound/eating-chips.mp3");
+  playBtnSound.play();
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+  const playBtn = document.getElementById("play-button");
+  playBtn.addEventListener("click", playBtnClick);
 });
