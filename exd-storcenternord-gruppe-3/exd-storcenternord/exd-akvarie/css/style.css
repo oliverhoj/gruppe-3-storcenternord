@@ -186,10 +186,13 @@ body {
   bottom: 160px;
   left: 348px;
   transform: none;
+<<<<<<< HEAD
   position: absolute;
   bottom: 160px;
   left: 348px;
   transform: none;
+=======
+>>>>>>> 3d4ea5cfc745c0aab732f432507b346ab3ff3b0d
   cursor: pointer;
 }
 
