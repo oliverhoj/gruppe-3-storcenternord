@@ -48,36 +48,11 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 function faktaBtn(event) {
-  const piratSound = new Audio("sound/wooden-ship-break.mp3");
-  piratSound.play();
+  const faktaSound = new Audio("sound/ding.mp3");
+  faktaSound.play();
 }
 
 document.addEventListener("DOMContentLoaded", () => {
-  const piratskib = document.getElementById("piratskib");
-  piratskib.addEventListener("click", piratClick);
+  const fakta = document.getElementById("fish-button");
+  fakta.addEventListener("click", faktaBtn);
 });
-
-const fishInfo = [
-  {
-    fishName: "Oliver",
-    fishColor: "blue",
-    fishAge: 4
-  },
-  {
-    fishName: "Tenna",
-    fishColor: "yellow",
-    fishAge: 5
-  },
-  {
-    fishName: "Martin",
-    fishColor: "green",
-    fishAge: 6
-  },
-  {
-    fishName: "Freja",
-    fishColor: "orange og hvid",
-    fishAge: 4
-  }
-];
-
-
