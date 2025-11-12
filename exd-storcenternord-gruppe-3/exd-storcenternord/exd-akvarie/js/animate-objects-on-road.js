@@ -47,6 +47,16 @@ document.addEventListener("DOMContentLoaded", () => {
   piratskib.addEventListener("click", piratClick);
 });
 
+function faktaBtn(event) {
+  const piratSound = new Audio("sound/wooden-ship-break.mp3");
+  piratSound.play();
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+  const piratskib = document.getElementById("piratskib");
+  piratskib.addEventListener("click", piratClick);
+});
+
 const fishInfo = [
   {
     fishName: "Oliver",
