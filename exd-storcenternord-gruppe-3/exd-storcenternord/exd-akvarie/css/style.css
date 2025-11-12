@@ -51,6 +51,7 @@ body {
   cursor: pointer;
   padding: 0;
   transition: transform 0.3s ease;
+  z-index: 100;
 }
 
 .image-button:hover {
@@ -191,6 +192,68 @@ body {
 .pirat img {
   max-width: 100vw;
   height: 90vh;
+}
+
+.image-bluefish {
+  position: absolute;
+  width: 20px; /* gør fisken mindre */
+  max-width: 20vw; /* skalerer pænt på små/større skærme */
+  bottom: 400px; /* placeret nede */
+  right: 150px; /* placeret i højre hjørne */
+  transform: none; /* fjern tidligere translate */
+  z-index: 3; /* sørg for den ligger over baggrunden */
+}
+
+.image-bluefish img {
+  max-width: 600%; /* ændre str på fisken */
+  height: auto; /* bevar proportioner */
+}
+
+.image-yellowfish {
+  position: absolute;
+  width: 20px;
+  max-width: 20vw;
+  bottom: 30px;
+  left: 30px;
+  transform: none;
+  z-index: 3;
+  top: 30px;
+}
+
+.image-yellowfish img {
+  max-width: 400%;
+  height: auto;
+}
+
+.image-greenfish {
+  position: absolute;
+  width: 20px;
+  max-width: 20vw;
+  bottom: 40px;
+  right: 160px;
+  transform: none;
+  z-index: 4;
+}
+
+.image-greenfish img {
+  max-width: 900%;
+  height: auto;
+}
+
+.image-nemofish {
+  position: absolute;
+  width: 20px;
+  max-width: 20vw;
+  bottom: 30px;
+  left: 30px;
+  transform: none;
+  z-index: 3;
+  top: 400px;
+}
+
+.image-nemofish img {
+  max-width: 580%;
+  height: auto;
 }
 
 
