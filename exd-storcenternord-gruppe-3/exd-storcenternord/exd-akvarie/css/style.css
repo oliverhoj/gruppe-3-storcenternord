@@ -88,7 +88,7 @@ body {
   bottom: -40vh;
   width: 40px;
   height: 40px;
-  z-index: 2;
+  z-index: 90;
   animation: bubble-up 8s linear infinite;
   cursor: pointer;
 }
@@ -119,7 +119,7 @@ body {
   animation-delay: 0s;
   animation-duration: 12s;
   left: 50%;
-  --drift: -27px;
+  --drift: 27px;
 }
 .bubble:nth-child(4) {
   animation-delay: 0s;
@@ -131,7 +131,7 @@ body {
   animation-delay: 0s;
   animation-duration: 10s;
   left: 90%;
-  --drift: -13px;
+  --drift: 13px;
 }
 
 .bubble:nth-child(6) {
@@ -151,7 +151,7 @@ body {
   animation-delay: 0s;
   animation-duration: 12s;
   left: 63%;
-  --drift: -20px;
+  --drift: 20px;
 }
 .bubble:nth-child(9) {
   animation-delay: 0s; /* gør boblen synlig med det samme */
@@ -163,7 +163,7 @@ body {
   animation-delay: 0s;
   animation-duration: 10s;
   left: 96%;
-  --drift: -10px;
+  --drift: 10px;
 }
 
 .image-skattekiste {
@@ -182,6 +182,10 @@ body {
 }
 
 .pirat {
+  position: absolute;
+  bottom: 160px;
+  left: 348px;
+  transform: none;
   position: absolute;
   bottom: 160px;
   left: 348px;
@@ -236,7 +240,7 @@ body {
 }
 
 .image-greenfish img {
-  max-width: 900%;
+  max-width: 700%;
   height: auto;
 }
 
@@ -255,4 +259,3 @@ body {
   max-width: 580%;
   height: auto;
 }
-
